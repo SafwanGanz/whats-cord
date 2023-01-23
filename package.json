@@ -40,6 +40,6 @@
   },
   "homepage": "https://github.com/SafwanGanz/whats-cord",
   "dependencies": {
-    "canvas": "^0.1.29"
+    "canvas": "^2.11.0"
   }
 }

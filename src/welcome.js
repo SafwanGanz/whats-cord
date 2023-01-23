@@ -36,7 +36,7 @@ class Welcome {
     async build() {
     const canvas = Canvas.createCanvas(1024, 500);
     const context = canvas.getContext('2d');
-    let nm = this.name.length > 13 ? this.name.substring(0, 9) + "..." : this.name;
+    let nm = this.membername.length > 13 ? this.membername.substring(0, 9) + "..." : this.membername;
     const background = await Canvas.loadImage(this.background);
         context.drawImage(background, 0, 0, 1024, 500);
         context.font = '42px serif';

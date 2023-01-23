@@ -19,7 +19,7 @@ await welcome(groupName, memberName, background , avatar, welcome or goodbye )
 .then(buffer => {
 console.log(buffer)
 })
-
+```
 ## Sources
 
 canvacord

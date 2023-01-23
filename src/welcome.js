@@ -1,0 +1,69 @@
+const Canvas = require("canvas");
+class Welcome {
+    constructor() {
+        this.grupname = null;
+        this.avatar = null;
+        this.membername = null;
+        this.background = null;
+        this.message = null;
+    }
+    setGroupName(grupname) {
+        if (!grupname || typeof groupname !== "string") throw new Error(`Expected title, received ${typeof title}!`);
+        this.grupname = grupname;
+        return this;
+    }
+    setAvatar(source) {
+        if (!source) throw new Error(`Expected image source, received ${typeof title}!`);
+        this.avatar = source;
+        return this;
+    }
+    setBackground(source) {
+        if (!source) throw new Error(`Expected image source, received ${typeof title}!`);
+        this.background = source;
+        return this;
+    }
+    setMemberName(name) {
+        if (!name || typeof name !== "string") throw new Error(`Expected member name, received ${typeof name}!`);
+        this.membername = name;
+        return this;
+    }
+    setMessage(message) {
+  if (!name || typeof name !== "string") throw new 
+  Error(`Expected album name, received ${typeof name}!`);
+        this.message = message;
+        return this;
+    }
+    async build() {
+    const canvas = Canvas.createCanvas(1024, 500);
+    const context = canvas.getContext('2d');
+    let nm = this.name.length > 13 ? this.name.substring(0, 9) + "..." : this.name;
+    const background = await Canvas.loadImage(this.background);
+        context.drawImage(background, 0, 0, 1024, 500);
+        context.font = '42px serif';
+        context.textAlign = 'center'
+	    context.fillStyle = '#ffffff';
+	    context.fillText('Hello' + ' ' + nm, canvas.width - 512,          canvas.height - 200);
+        context.font = ' 32px ariel';
+        context.textAlign = 'center'
+        context.fillStyle = '#FFFFFF';
+        context.fillText(this.messsage, canvas.width - 512, canvas.height - 150);
+        context.font = ' 32px trajan-bold';
+        context.textAlign = 'center'
+        context.fillStyle = '#FFFFFF';
+        context.fillText(this.grupname, canvas.width - 512, canvas.height - 110);
+	    context.beginPath();
+ 	    context.arc(512, 150, 80, 0, Math.PI * 2, true);
+        context.strokeStyle = '#FFFFFF';
+        context.lineWidth = 6;
+        context.stroke();
+        context.save();
+	    context.closePath();
+	    context.clip();
+    const avatar = await Canvas.loadImage(this.avatar);
+       context.drawImage(avatar, 391, 47, 218, 219);
+        return canvas.encode("png");
+    }
+
+}
+
+module.exports = Welcome;

@@ -8,28 +8,22 @@ class Welcome {
         this.message = null;
     }
     setGroupName(grupname) {
-        if (!grupname || typeof groupname !== "string") throw new Error(`Expected title, received ${typeof title}!`);
         this.grupname = grupname;
         return this;
     }
     setAvatar(source) {
-        if (!source) throw new Error(`Expected image source, received ${typeof title}!`);
         this.avatar = source;
         return this;
     }
     setBackground(source) {
-        if (!source) throw new Error(`Expected image source, received ${typeof title}!`);
         this.background = source;
         return this;
     }
     setMemberName(name) {
-        if (!name || typeof name !== "string") throw new Error(`Expected member name, received ${typeof name}!`);
         this.membername = name;
         return this;
     }
     setMessage(message) {
-  if (!name || typeof name !== "string") throw new 
-  Error(`Expected album name, received ${typeof name}!`);
         this.message = message;
         return this;
     }

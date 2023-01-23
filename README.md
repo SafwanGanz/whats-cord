@@ -11,7 +11,7 @@ npm install whats-cord
 
 ```javascript
 
-const Canvas = require('canvas');
+const welcome = require('whats-cord');
 
 // Enter Value
 

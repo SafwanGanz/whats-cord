@@ -1,0 +1,45 @@
+{
+  "name": "whats-cord",
+  "version": "1.0.0",
+  "description": "Powerful image manipulation package for beginners.",
+  "main": "index.js",
+  "types": "typings/index.d.ts",
+  "files": [
+    "src",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SafwanGanz/whats-cord"
+  },
+  "keywords": [
+    "canvacord",
+    "canvas",
+    "image",
+    "manipulation",
+    "easy",
+    "simple",
+    "fast",
+    "api",
+    "rank",
+    "card",
+    "rankcard",
+    "welcomer",
+    "leaver",
+    "spotify",
+    "memegen"
+  ],
+  "author": "SafwanGanz",
+  "funding": {
+    "type": "individual",
+    "url": "917012074386@paytm"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SafwanGanz/whats-cord/issues"
+  },
+  "homepage": "https://github.com/SafwanGanz/whats-cord",
+  "dependencies": {
+    "canvas": "^0.1.29"
+  }
+}

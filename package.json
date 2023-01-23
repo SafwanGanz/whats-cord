@@ -35,6 +35,9 @@
     "url": "917012074386@paytm"
   },
   "license": "MIT",
+  "publishConfig": {
+  "registry": "https://npm.pkg.github.com"
+  },
   "bugs": {
     "url": "https://github.com/SafwanGanz/whats-cord/issues"
   },

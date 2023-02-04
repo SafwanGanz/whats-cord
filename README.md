@@ -24,8 +24,6 @@ await welcome(groupName, memberName, background , avatar, welcome)
 console.log(buffer)
 })
 
-<img align="center" fit="fill" alt="JPG" src="https://i.ibb.co/sgDvxrK/IMG-20210727-WA1305.jpg" />
-
 ```
 ## Sources
 
